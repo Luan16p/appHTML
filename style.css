@@ -1,0 +1,178 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.g-app {
+    width: 100vw;
+    height: 100vh;
+    background: #222;
+    transition: 0.3s;
+}
+
+
+.center-app {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.app {
+    width: 375px;
+    height: 100vh;
+    border-radius: 30px;
+    border: 6px solid rgb(0, 0, 0);
+    color: #fff;
+    background: url(bg.jpg);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.app header > nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+    font-weight: bold;
+}
+
+.app ul {
+    list-style: none;
+    display: flex;
+}
+
+.app i {
+    color: #fff;
+    font-weight: bold;
+}
+
+.align {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.appFlutter {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.hello-name {
+    width: 234px;
+    font-size: 40px;
+    animation: digitando 2s steps(25), blink .4s infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+}
+
+.appKt {
+    padding: 50px 10px;
+    background: rgba(204, 204, 204, 0.671);
+    border-radius: 15px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    transition: 0.3555s;
+    box-shadow: 0px 2px 5px 1px rgb(102, 100, 100);
+}
+.appKt h2 {
+    width: 300px;
+    margin: 20px 0;
+}
+
+.app-btn {
+    display: flex;
+    width: auto;
+    justify-content: center;
+}
+
+.appKt button {
+    font-family: sans-serif;
+    font-size: 16px;
+    width: 50px;
+    height: 48px;
+    margin: 15px 0;
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.993);
+    background: rgba(255, 255, 255, 0);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #fff;
+}
+
+.appKt button:hover {
+    color: #fff;
+    width: 150px;
+    border-radius: 13px;
+    border: 1px solid #fff;
+    background: rgba(253, 253, 253, 0);
+    transition: 0;
+}
+
+
+.appKt button:hover::after {
+    content: "Ajuda";
+    color: #fff;
+    transition: 0;
+}
+
+#popUp-next {
+    width: 60%;
+    border: 0;
+    height: 5vh;
+    border-radius: 25px;
+    background: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 00.3555s;
+    box-shadow: 0px 2px 5px 1px rgb(53, 53, 53);
+}
+
+#popUp-next:hover {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0);
+}
+
+
+#popUp-back {
+    width: 60%;
+    height: 5vh;
+    border-radius: 25px;
+    border: 0;
+    background: rgba(204, 204, 204, 0.342);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 00.3555s;
+    margin: 15px 0;
+    box-shadow: 0px 2px 5px 1px rgb(53, 53, 53);
+}
+
+#popUp-back:hover {
+
+    border-radius: 10px;
+}
+
+@keyframes digitando {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    40% {
+
+    }
+}
