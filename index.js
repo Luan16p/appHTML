@@ -15,7 +15,7 @@ else {
 
 function Replace($btn=document.getElementById('replace-help')) {
     $btn.addEventListener('click', ()=> {
-        window.location.replace("https://github.com/Luan16p");
+        window.location.replace("https://github.com/Luan16p/appHTML/blob/main/README.md");
 
     }) 
 }
