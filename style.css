@@ -25,7 +25,8 @@
     border-radius: 30px;
     border: 6px solid rgb(0, 0, 0);
     color: #fff;
-    background: url(bg.jpg);
+    background: url(bg.jpg) no-repeat top left;
+    background-size: cover;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -75,13 +76,12 @@
 
 .appKt {
     padding: 50px 10px;
-    background: rgba(204, 204, 204, 0.671);
+    background: rgba(223, 223, 223, 0.76);
     border-radius: 15px;
     display: flex;
     text-align: center;
     flex-direction: column;
     transition: 0.3555s;
-    box-shadow: 0px 2px 5px 1px rgb(102, 100, 100);
 }
 .appKt h2 {
     width: 300px;
@@ -101,19 +101,20 @@
     height: 48px;
     margin: 15px 0;
     border-radius: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.993);
+    border: 0;
     background: rgba(255, 255, 255, 0);
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s;
-    color: rgba(255, 255, 255, 1);
+    color: #fff;
+    box-shadow: 0px 2px 5px 1px rgb(102, 100, 100);
+
 }
 
 .appKt button:hover {
     color: rgba(255, 255, 255, 0);
     width: 150px;
     border-radius: 13px;
-    border: 1px solid #fff;
     background: rgba(253, 253, 253, 0);
     transition: 0;
 }
@@ -130,18 +131,18 @@
     border: 0;
     height: 5vh;
     border-radius: 25px;
-    background: none;
+    background: linear-gradient(90deg, #fd5632, #fc0091);
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
     transition: 00.3555s;
-    box-shadow: 0px 2px 5px 1px rgb(53, 53, 53);
+    box-shadow: -2px 3px 10px #222;
 }
 
 #popUp-next:hover {
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0);
+    box-shadow: -2px 3px 30px #222;
 }
 
 
@@ -150,19 +151,21 @@
     height: 5vh;
     border-radius: 25px;
     border: 0;
-    background: rgba(204, 204, 204, 0.342);
+    background: linear-gradient(90deg, #fc0091, #fd5632);
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
     transition: 00.3555s;
-    margin: 15px 0;
-    box-shadow: 0px 2px 5px 1px rgb(53, 53, 53);
+    margin: 25px 0;
+    box-shadow: -2px 3px 10px #222;
 }
 
-#popUp-back:hover {
 
+#popUp-back:hover {
     border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: -2px 3px 30px #222;
 }
 
 @keyframes digitando {
