@@ -106,11 +106,11 @@
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s;
-    color: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 1);
 }
 
 .appKt button:hover {
-    color: #fff;
+    color: rgba(255, 255, 255, 0);
     width: 150px;
     border-radius: 13px;
     border: 1px solid #fff;
