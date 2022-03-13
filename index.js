@@ -21,7 +21,7 @@ function Replace($btn=document.getElementById('replace-help')) {
 }
 
 const server = {
-    status_server: "F", // O [ On ] / F [ Off ]
+    status_server: "O", // O [ On ] / F [ Off ]
 }
 
 const { status_server } = server;
